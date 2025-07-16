@@ -1,19 +1,64 @@
 {
-  "default": "¡Hola, gracias por comunicarte con UCEMA! ¿En qué carreras estás interesado?\n\n1: Ingeniería en Inteligencia Artificial\n\n2: Ingeniería en Informática\n\n3: Licenciatura en Negocios Digitales\n\n4: Licenciatura en Finanzas\n\n5: Licenciatura en Economía\n\n6: Licenciatura en Economía Empresarial\n\n7: Licenciatura en Administración de Empresas\n\n8: Licenciatura en Marketing\n\n9: Licenciatura en Artes Liberales y Ciencias (BA)\n\n10: Licenciatura en Ciencias Políticas\n\n11: Licenciatura en Relaciones Internacionales\n\n12: Licenciatura en Analítica de Negocios\n\n13: Actuario\n\n14: Contador Público\n\n15: Abogacía",
-  
-  "1": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491159644863?text=Estoy+interesado+en+Ingeniería+en+Inteligencia+Artificial",
-  "2": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491141815223?text=Estoy+interesado+en+Ingeniería+en+Informática",
-  "3": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491122688912?text=Estoy+interesado+en+Licenciatura+en+Negocios+Digitales",
-  "4": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491141815223?text=Estoy+interesado+en+Licenciatura+en+Finanzas",
-  "5": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491159644863?text=Estoy+interesado+en+Licenciatura+en+Economía",
-  "6": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491136163074?text=Estoy+interesado+en+Licenciatura+en+Economía+Empresarial",
-  "7": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491136163074?text=Estoy+interesado+en+Licenciatura+en+Administración+de+Empresas",
-  "8": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491140888081?text=Estoy+interesado+en+Licenciatura+en+Marketing",
-  "9": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491141815223?text=Estoy+interesado+en+Licenciatura+en+Artes+Liberales+y+Ciencias+(BA)",
-  "10": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491136786247?text=Estoy+interesado+en+Licenciatura+en+Ciencias+Políticas",
-  "11": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491136786247?text=Estoy+interesado+en+Licenciatura+en+Relaciones+Internacionales",
-  "12": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491140888081?text=Estoy+interesado+en+Licenciatura+en+Analítica+de+Negocios",
-  "13": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491122688912?text=Estoy+interesado+en+Actuario",
-  "14": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491136163074?text=Estoy+interesado+en+Contador+Público",
-  "15": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491136786247?text=Estoy+interesado+en+Abogacía"
+  "default": "\u00a1Hola, gracias por comunicarte con UCEMA! \u00bfEn qu\u00e9 carreras est\u00e1s interesado?\n\n1: Ingenier\u00eda en Inteligencia Artificial\n\n2: Ingenier\u00eda en Inform\u00e1tica\n\n3: Licenciatura en Negocios Digitales\n\n4: Licenciatura en Finanzas\n\n5: Licenciatura en Econom\u00eda\n\n6: Licenciatura en Econom\u00eda Empresarial\n\n7: Licenciatura en Administraci\u00f3n de Empresas\n\n8: Licenciatura en Marketing\n\n9: Licenciatura en Artes Liberales y Ciencias (BA)\n\n10: Licenciatura en Ciencias Pol\u00edticas\n\n11: Licenciatura en Relaciones Internacionales\n\n12: Licenciatura en Anal\u00edtica de Negocios\n\n13: Actuario\n\n14: Contador P\u00fablico\n\n15: Abogac\u00eda",
+
+  "ingenier\u00eda en inteligencia artificial": {
+    "descripcion": "🎯 Una carrera pensada para formarte en la tecnolog\u00eda que est\u00e1 transformando el mundo. Aprend\u00e9 a dise\u00f1ar, programar y aplicar sistemas inteligentes en industrias como salud, educaci\u00f3n, agro, finanzas, seguridad y m\u00e1s...",
+    "asesor": "5491159644863"
+  },
+  "ingenier\u00eda en inform\u00e1tica": {
+    "descripcion": "🖥 La carrera brinda s\u00f3lida formaci\u00f3n en todas las \u00e1reas de Ingenier\u00eda y Ciencias de la Computaci\u00f3n...",
+    "asesor": "5491141815223"
+  },
+  "licenciatura en negocios digitales": {
+    "descripcion": "💡 La carrera te ayudar\u00e1 a desarrollar las herramientas para liderar el proceso de transformaci\u00f3n digital de las organizaciones...",
+    "asesor": "5491122688912"
+  },
+  "licenciatura en finanzas": {
+    "descripcion": "📈 La carrera te permitir\u00e1 analizar y evaluar inversiones, gestionar riesgos financieros y mucho m\u00e1s...",
+    "asesor": "5491141815223"
+  },
+  "licenciatura en econom\u00eda": {
+    "descripcion": "💡 Estudiar en UCEMA implica estar donde el conocimiento econ\u00f3mico se crea, se discute y se construye...",
+    "asesor": "5491159644863"
+  },
+  "licenciatura en econom\u00eda empresarial": {
+    "descripcion": "💡 Brinda las herramientas necesarias para tomar decisiones estrat\u00e9gicas y generar negocios con visi\u00f3n internacional...",
+    "asesor": "5491136163074"
+  },
+  "licenciatura en administraci\u00f3n de empresas": {
+    "descripcion": "✔️ Aprender\u00e1s a desarrollar herramientas para tomar decisiones sobre todas las \u00e1reas y recursos de una organizaci\u00f3n...",
+    "asesor": "5491136163074"
+  },
+  "licenciatura en marketing": {
+    "descripcion": "📌 La Licenciatura en Marketing ofrece una formaci\u00f3n integral con un enfoque en el marketing digital...",
+    "asesor": "5491140888081"
+  },
+  "licenciatura en artes liberales y ciencias": {
+    "descripcion": "✒️ El BA de UCEMA te brindar\u00e1 una formaci\u00f3n transversal, enfatizando competencias b\u00e1sicas en humanidades, ciencias y m\u00e1s...",
+    "asesor": "5491141815223"
+  },
+  "licenciatura en ciencias pol\u00edticas": {
+    "descripcion": "🗺 Formate para entender relaciones de poder, procesos pol\u00edticos y estructuras del Estado...",
+    "asesor": "5491136786247"
+  },
+  "licenciatura en relaciones internacionales": {
+    "descripcion": "🗺 Comprend\u00e9 las relaciones de poder entre los Estados, instituciones y actores globales...",
+    "asesor": "5491136786247"
+  },
+  "licenciatura en anal\u00edtica de negocios": {
+    "descripcion": "📊 Formaci\u00f3n en administraci\u00f3n, matem\u00e1tica, estad\u00edstica, programaci\u00f3n, IA y deep learning...",
+    "asesor": "5491140888081"
+  },
+  "actuario": {
+    "descripcion": "📈 Comprend\u00e9 la aplicaci\u00f3n de herramientas estad\u00edsticas y financieras para tomar decisiones de alto impacto...",
+    "asesor": "5491122688912"
+  },
+  "contador p\u00fablico": {
+    "descripcion": "✔️ Identific\u00e1 oportunidades, analiz\u00e1 informaci\u00f3n financiera y garantiz\u00e1 transparencia en la gesti\u00f3n...",
+    "asesor": "5491136163074"
+  },
+  "abogac\u00eda": {
+    "descripcion": "🎓 Programa dise\u00f1ado para formar profesionales innovadores con preparaci\u00f3n en nuevas competencias del derecho...",
+    "asesor": "5491136786247"
+  }
 }
