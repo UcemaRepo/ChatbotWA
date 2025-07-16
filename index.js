@@ -8,11 +8,16 @@ app.use(express.json());
 let menu = JSON.parse(fs.readFileSync('menu.json', 'utf8'));
 
 app.post('/message.php', (req, res) => {
-  const { message } = req.body;
-  console.log("📩 Mensaje recibido:", message);
+  const { message, sender, phone } = req.body;
 
-  const clave = (message || "").trim();
+  // Logging para depuración
+  console.log("📩 BODY recibido:", req.body);
+
+  const clave = (message || "").trim().toLowerCase(); // Normalización
+
   const respuesta = menu[clave] || menu["default"];
+
+  console.log(`🔑 Clave recibida: "${clave}" → Respuesta: "${respuesta}"`);
 
   res.json({ reply: respuesta });
 });
