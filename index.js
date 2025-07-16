@@ -4,84 +4,58 @@ const fs = require('fs');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware para capturar el body RAW
+// Middleware para capturar el body RAW antes de parsearlo
 app.use(async (req, res, next) => {
   try {
     const raw = await getRawBody(req);
-    req.rawText = raw.toString();
+    console.log('Body RAW recibido:', raw.toString());
+    req.rawBodyText = raw.toString();
     next();
   } catch (err) {
     next(err);
   }
 });
 
+// Middleware para URL encoded (formularios)
 app.use(express.urlencoded({ extended: true }));
+
+// Middleware para JSON
 app.use(express.json());
 
-// Cargo menú
-const rawMenu = JSON.parse(fs.readFileSync('menu.json', 'utf8'));
-
-// Palabras que activan el mensaje inicial
-const palabrasInicio = ['hola', 'empezar', 'asesor', 'inicio'];
-
-// Diccionario de números → carreras
-const opcionesNumericas = {
-  "1": "ingeniería en inteligencia artificial",
-  "2": "ingeniería en informática",
-  "3": "licenciatura en negocios digitales",
-  "4": "licenciatura en finanzas",
-  "5": "licenciatura en economía",
-  "6": "licenciatura en economía empresarial",
-  "7": "licenciatura en administración de empresas",
-  "8": "licenciatura en marketing",
-  "9": "licenciatura en artes liberales y ciencias",
-  "10": "licenciatura en ciencias políticas",
-  "11": "licenciatura en relaciones internacionales",
-  "12": "licenciatura en analítica de negocios",
-  "13": "actuario",
-  "14": "contador público",
-  "15": "abogacía"
-};
+// Cargo el menú desde un JSON local
+let menu = JSON.parse(fs.readFileSync('menu.json', 'utf8'));
 
 app.post('/message.php', (req, res) => {
-  const bodyRaw = req.rawText || '';
-  const clave = bodyRaw.toLowerCase().trim();
+  console.log('Content-Type recibido:', req.headers['content-type']);
+  console.log('Body recibido:', req.body);
 
-  console.log('Mensaje recibido:', clave);
-
-  // Si es un número válido
-  if (opcionesNumericas[clave]) {
-    const carrera = opcionesNumericas[clave];
-    const datos = rawMenu[carrera];
-    const mensaje = `${datos.descripcion}\n\n👉 https://wa.me/${datos.asesor}?text=Estoy+interesado+en+${encodeURIComponent(carrera)}`;
-    return res.json({ reply: mensaje });
+  let mensajeTexto = req.body?.message || '';
+  if (!mensajeTexto && req.rawBodyText) {
+    // Parseamos si vino en formato application/x-www-form-urlencoded manualmente
+    const params = new URLSearchParams(req.rawBodyText);
+    mensajeTexto = params.get('message') || '';
   }
 
-  // Si contiene palabras clave de inicio
-  if (palabrasInicio.some(p => clave.includes(p))) {
-    return res.json({ reply: rawMenu.default });
-  }
+  const clave = mensajeTexto.trim().toLowerCase();
+  console.log("🔑 Clave normalizada:", clave);
 
-  // Si contiene el nombre de alguna carrera
-  for (const carrera of Object.keys(rawMenu)) {
-    if (carrera === 'default') continue;
-    if (clave.includes(carrera)) {
-      const datos = rawMenu[carrera];
-      const mensaje = `${datos.descripcion}\n\n👉 https://wa.me/${datos.asesor}?text=Estoy+interesado+en+${encodeURIComponent(carrera)}`;
-      return res.json({ reply: mensaje });
-    }
+  if (menu[clave]) {
+    const respuesta = `${menu[clave].descripcion}\n👉 Contactá con un asesor: https://wa.me/${menu[clave].asesor}?text=Estoy%20interesado%20en%20la%20${encodeURIComponent(clave)}`;
+    console.log(`📤 Respuesta enviada: "${respuesta}"`);
+    res.json({ reply: respuesta });
+  } else {
+    console.log("📤 Respuesta enviada (default):", menu.default);
+    res.json({ reply: menu.default });
   }
-
-  // Si no coincide nada
-  return res.json({ reply: rawMenu.default });
 });
 
-app.get('/', (req, res) => {
-  res.send('🟢 Servidor WhatsAuto activo');
+app.get("/", (req, res) => {
+  res.send("🟢 Servidor WhatsAuto activo");
 });
 
 app.listen(PORT, () => {
   console.log(`✅ Servidor escuchando en http://localhost:${PORT}`);
 });
+
 
 
