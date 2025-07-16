@@ -10,15 +10,16 @@ let menu = JSON.parse(fs.readFileSync('menu.json', 'utf8'));
 app.post('/message.php', (req, res) => {
   const { message, sender, phone } = req.body;
 
+  const clave = (message || "").trim().toLowerCase();
+
   // Logging para depuración
   console.log("📩 BODY recibido:", req.body);
-
-  const clave = (message || "").trim().toLowerCase(); // Normalización
+  console.log("🔑 Clave buscada:", JSON.stringify(clave));
+  console.log("📚 Claves en el menú:", Object.keys(menu));
 
   const respuesta = menu[clave] || menu["default"];
 
-  console.log(`🔑 Clave recibida: "${clave}" → Respuesta: "${respuesta}"`);
-
+  console.log(`📤 Respuesta enviada: "${respuesta}"`);
   res.json({ reply: respuesta });
 });
 
