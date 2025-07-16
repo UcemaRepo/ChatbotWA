@@ -4,6 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 let menu = JSON.parse(fs.readFileSync('menu.json', 'utf8'));
 
@@ -13,14 +14,12 @@ app.post('/message.php', (req, res) => {
   const rawMessage = String(message || "");
   const clave = rawMessage.trim().toLowerCase();
 
-  // Logging detallado para depuración
   console.log("📩 BODY recibido:", req.body);
   console.log("🧪 RAW:", rawMessage);
   console.log("🧪 BYTES:", Array.from(Buffer.from(rawMessage)));
   console.log("🔑 Clave normalizada:", clave);
   console.log("📚 Claves en el menú:", Object.keys(menu));
 
-  // Coincidencia flexible
   let respuesta = menu["default"];
   for (const key of Object.keys(menu)) {
     if (clave === key.trim().toLowerCase()) {
@@ -32,7 +31,6 @@ app.post('/message.php', (req, res) => {
   console.log(`📤 Respuesta enviada: "${respuesta}"`);
   res.json({ reply: respuesta });
 });
-
 
 app.get("/", (req, res) => {
   res.send("🟢 Servidor WhatsAuto activo");
