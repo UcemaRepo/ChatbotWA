@@ -1,64 +1,79 @@
 {
-  "default": "\u00a1Hola, gracias por comunicarte con UCEMA! \u00bfEn qu\u00e9 carreras est\u00e1s interesado?\n\n1: Ingenier\u00eda en Inteligencia Artificial\n\n2: Ingenier\u00eda en Inform\u00e1tica\n\n3: Licenciatura en Negocios Digitales\n\n4: Licenciatura en Finanzas\n\n5: Licenciatura en Econom\u00eda\n\n6: Licenciatura en Econom\u00eda Empresarial\n\n7: Licenciatura en Administraci\u00f3n de Empresas\n\n8: Licenciatura en Marketing\n\n9: Licenciatura en Artes Liberales y Ciencias (BA)\n\n10: Licenciatura en Ciencias Pol\u00edticas\n\n11: Licenciatura en Relaciones Internacionales\n\n12: Licenciatura en Anal\u00edtica de Negocios\n\n13: Actuario\n\n14: Contador P\u00fablico\n\n15: Abogac\u00eda",
+  "default": "¡Hola, gracias por comunicarte con UCEMA! ¿En qué carreras estás interesado?\n\n1: Ingeniería en Inteligencia Artificial\n\n2: Ingeniería en Informática\n\n3: Licenciatura en Negocios Digitales\n\n4: Licenciatura en Finanzas\n\n5: Licenciatura en Economía\n\n6: Licenciatura en Economía Empresarial\n\n7: Licenciatura en Administración de Empresas\n\n8: Licenciatura en Marketing\n\n9: Licenciatura en Artes Liberales y Ciencias\n\n10: Licenciatura en Ciencias Políticas\n\n11: Licenciatura en Relaciones Internacionales\n\n12: Licenciatura en Analítica de Negocios\n\n13: Actuario\n\n14: Contador Público\n\n15: Abogacía",
 
-  "ingenier\u00eda en inteligencia artificial": {
-    "descripcion": "🎯 Una carrera pensada para formarte en la tecnolog\u00eda que est\u00e1 transformando el mundo. Aprend\u00e9 a dise\u00f1ar, programar y aplicar sistemas inteligentes en industrias como salud, educaci\u00f3n, agro, finanzas, seguridad y m\u00e1s...",
+  "ingeniería en inteligencia artificial": {
+    "descripcion": "🎯 Una carrera pensada para formarte en la tecnología que está transformando el mundo. Aprendé a diseñar, programar y aplicar sistemas inteligentes en industrias como salud, educación, agro, finanzas, seguridad y más.\n\n📚 Formación de excelencia inspirada en Stanford y MIT, con materias como Aprendizaje Automático, Deep Learning, NLP, Visión Computacional y Criptografía.\n\n🧠 Incluye la materia “La Lente Computacional”, que integra ética, filosofía y ciencia para aplicar la IA de forma responsable.\n\n📝 Plan de estudios: 5 años. Título intermedio de Analista en Inteligencia Artificial al finalizar el segundo año.\n\n🏛 Modalidad presencial en la Ciudad de Buenos Aires.\n\n🕓 Cursada diurna (9 a 15 h) los primeros años.\n\n🧪 Prácticas profesionales supervisadas + Proyecto Final Integrador con casos reales.\n\n✈ Posibilidad de cursar materias en universidades del exterior a través del programa freemover.",
     "asesor": "5491159644863"
   },
-  "ingenier\u00eda en inform\u00e1tica": {
-    "descripcion": "🖥 La carrera brinda s\u00f3lida formaci\u00f3n en todas las \u00e1reas de Ingenier\u00eda y Ciencias de la Computaci\u00f3n...",
+
+  "ingeniería en informática": {
+    "descripcion": "🖥 La carrera brinda sólida formación en todas las áreas de Ingeniería y Ciencias de la Computación: plataformas de hardware, diseño e implementación de sistemas, redes de comunicaciones, desarrollos web, bases de datos, aplicaciones, inteligencia artificial y computación científica.\n\n💡 Combinación estratégica con herramientas de dirección de empresas, sistemas de información de gestión, finanzas y recursos humanos.\n\n📝 Plan de estudios: 5 años. Cursada presencial en la Ciudad de Buenos Aires de lunes a viernes de 18:30 a 22:30 h. A partir de 3º año se implementa la cursada híbrida, pudiendo cursar tanto online como presencial en el mismo horario.\n\n➡ Prácticas laborales locales: Convenios para realizar pasantías laborales en las mejores empresas.\n\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491141815223"
   },
+
   "licenciatura en negocios digitales": {
-    "descripcion": "💡 La carrera te ayudar\u00e1 a desarrollar las herramientas para liderar el proceso de transformaci\u00f3n digital de las organizaciones...",
+    "descripcion": "💡 La carrera te ayudará a desarrollar las herramientas para liderar el proceso de transformación digital de las organizaciones, con un gran conocimiento del impacto de las tecnologías de la información en la empresa, los nuevos modelos de negocios y proyectos que nacen en la nueva economía digital.\n\n📌 Tendrás un curso de entrepreneurship teórico-práctico orientado al desarrollo e implementación de proyectos para ayudarte a crear tu propia empresa, tu emprendimiento.\n\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes 9 a 15 h.\n\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n\n🎓 Doble titulación en un plazo reducido.\n\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491122688912"
   },
+
   "licenciatura en finanzas": {
-    "descripcion": "📈 La carrera te permitir\u00e1 analizar y evaluar inversiones, gestionar riesgos financieros y mucho m\u00e1s...",
+    "descripcion": "📈 La carrera te permitirá analizar y evaluar inversiones; asesorar a inversores personales e institucionales; participar en la gestión de portafolios de inversión; evaluar y gestionar riesgos financieros; y diseñar e implementar modelos de gestión basados en el objetivo de creación de valor económico.\n\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n\n📊 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n\n🎓 Doble titulación en un plazo reducido.\n\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491141815223"
   },
-  "licenciatura en econom\u00eda": {
-    "descripcion": "💡 Estudiar en UCEMA implica estar donde el conocimiento econ\u00f3mico se crea, se discute y se construye...",
+
+  "licenciatura en economía": {
+    "descripcion": "💡 La UCEMA es una de las casas de estudios con mejor posición en rankings regionales de producción científica en economía. Estudiar en nuestra Universidad implica estar donde el conocimiento económico se crea, se discute y se construye.\n\n💹 En la carrera aprenderás a trabajar sobre aspectos microeconómicos y macroeconómicos, desarrollando la creatividad y la forma de abordar los problemas con una perspectiva global. Además, sabrás aplicar en forma práctica tu formación en econometría, finanzas, producción e intercambio, administración, comercio internacional.\n\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n\n➡ Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n\n🎓 Doble titulación en un plazo reducido.\n\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491159644863"
   },
-  "licenciatura en econom\u00eda empresarial": {
-    "descripcion": "💡 Brinda las herramientas necesarias para tomar decisiones estrat\u00e9gicas y generar negocios con visi\u00f3n internacional...",
+
+  "licenciatura en economía empresarial": {
+    "descripcion": "💡 La Licenciatura en Economía Empresarial es un programa innovador que brinda las herramientas necesarias para tomar decisiones estratégicas y generar negocios con visión internacional.\n\n💹 Siendo graduado de la carrera, vas a ser capaz de gestar, desarrollar y liderar negocios en la nueva economía a partir de la comprensión del contexto propio de cada organización y las relaciones entre sus áreas y funciones.\n\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n\n➡ Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n\n🎓 Doble titulación en un plazo reducido.\n\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491136163074"
   },
-  "licenciatura en administraci\u00f3n de empresas": {
-    "descripcion": "✔️ Aprender\u00e1s a desarrollar herramientas para tomar decisiones sobre todas las \u00e1reas y recursos de una organizaci\u00f3n...",
+
+  "licenciatura en administración de empresas": {
+    "descripcion": "✔️ Durante la carrera aprenderás a desarrollar herramientas para tomar decisiones sobre todas las áreas y recursos de una organización. Podrás ser quien evalúe cuestiones económicas, desarrollo de nuevos negocios, el impacto tecnológico, la organización de equipos de trabajo, la producción y la vinculación internacional.\n\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 hs.\n\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n\n🎓 Doble titulación en un plazo reducido.\n\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491136163074"
   },
+
   "licenciatura en marketing": {
-    "descripcion": "📌 La Licenciatura en Marketing ofrece una formaci\u00f3n integral con un enfoque en el marketing digital...",
+    "descripcion": "📌 La Licenciatura en Marketing ofrece una formación integral con un enfoque principal en el marketing digital. Los estudiantes adquieren habilidades en estrategias tradicionales y digitales. Con un plan de estudios actualizado y adaptado a las tendencias globales, esta carrera prepara a los futuros profesionales para liderar en el dinámico mundo digital, combinando teoría y práctica para enfrentar los desafíos del mercado moderno.\n\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n\n➡ Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n\n🎓 Doble titulación en un plazo reducido.\n\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491140888081"
   },
+
   "licenciatura en artes liberales y ciencias": {
-    "descripcion": "✒️ El BA de UCEMA te brindar\u00e1 una formaci\u00f3n transversal, enfatizando competencias b\u00e1sicas en humanidades, ciencias y m\u00e1s...",
+    "descripcion": "✒️ El BA Licenciatura en Artes Liberales y Ciencias de UCEMA te brindará una formación transversal y realmente interdisciplinaria, enfatizando las competencias básicas y una amplitud de conocimientos en las áreas de humanidades, ciencias exactas y naturales, y ciencias sociales.\n\nLa carrera te permitirá desarrollar el pensamiento autónomo, el debate abierto de ideas, el análisis crítico y la capacidad de resolución de problemas. El programa introduce la experiencia del College en Argentina permitiéndole al alumno, a partir del 3er año, armar y elegir su propio trayecto académico.\n\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n\n➡ Prácticas laborales locales; convenios para realizar pasantías laborales en las mejores empresas.\n\n🎓 Doble titulación en un plazo reducido.\n\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491141815223"
   },
-  "licenciatura en ciencias pol\u00edticas": {
-    "descripcion": "🗺 Formate para entender relaciones de poder, procesos pol\u00edticos y estructuras del Estado...",
+
+  "licenciatura en ciencias políticas": {
+    "descripcion": "🗺 La carrera te permitirá formarte para entender las relaciones de poder presentes en los procesos y estructuras políticas, las actividades del Estado y sus instituciones, con una perspectiva y en el marco de una red estratégica nacional e internacional.\n\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n\n➡ Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n\n🎓 Doble titulación en un plazo reducido.\n\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491136786247"
   },
+
   "licenciatura en relaciones internacionales": {
-    "descripcion": "🗺 Comprend\u00e9 las relaciones de poder entre los Estados, instituciones y actores globales...",
+    "descripcion": "🗺 La carrera te permitirá comprender las relaciones de poder entre los Estados, sus instituciones, los organismos y los diferentes actores del sistema mundial, para analizar y promover intercambios desde lo político, lo económico, lo social y lo cultural.\n\n📝 Plan de estudios: 4 años. Cursada presencial en la Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n\n➡ Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas: como SONY, DANONE, PAMPA ENERGIA, McEWAN ¡entre muchas otras más!\n\n🎓 Doble titulación en un plazo reducido.\n\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491136786247"
   },
-  "licenciatura en anal\u00edtica de negocios": {
-    "descripcion": "📊 Formaci\u00f3n en administraci\u00f3n, matem\u00e1tica, estad\u00edstica, programaci\u00f3n, IA y deep learning...",
+
+  "licenciatura en analítica de negocios": {
+    "descripcion": "📊 La carrera te brindará una formación general en las áreas y disciplinas que hacen a la administración, gestión y dirección de organizaciones modernas; y una formación técnica en las herramientas de matemática y estadística, programación, análisis y gestión de datos, inteligencia artificial, deep learning e inteligencia de negocios.\n\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n\n🎓 Doble titulación en un plazo reducido.\n\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491140888081"
   },
+
   "actuario": {
-    "descripcion": "📈 Comprend\u00e9 la aplicaci\u00f3n de herramientas estad\u00edsticas y financieras para tomar decisiones de alto impacto...",
+    "descripcion": "📈 La carrera te brindará las herramientas para comprender la aplicación de herramientas estadísticas y financieras al mundo de los negocios, combinando la rigurosidad analítica con la mirada estratégica del mercado y los negocios.\n\nComo profesional de esta carrera tomarás decisiones de alto impacto en el mundo de los negocios, tanto en el sector público como en el privado.\n\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n\n➡ Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n\n🎓 Doble titulación en un plazo reducido.\n\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491122688912"
   },
-  "contador p\u00fablico": {
-    "descripcion": "✔️ Identific\u00e1 oportunidades, analiz\u00e1 informaci\u00f3n financiera y garantiz\u00e1 transparencia en la gesti\u00f3n...",
+
+  "contador público": {
+    "descripcion": "✔️ La carrera te permitirá identificar oportunidades, analizar y cuantificar la información económica financiera compleja para que los distintos niveles empresariales conozcan los resultados de su gestión y anticipen las acciones a seguir. Podrás manejar normas contables nacionales e internacionales y tendrás responsabilidad de garantizar información transparente.\n\n🤝 Vínculo con los principales estudios de auditoría, consultoría, impuestos y jurídicos para una rápida y estratégica salida laboral.\n\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h los dos primeros años y los últimos dos de 18.30 a 22.30h.\n\n🎓 Doble titulación en un plazo reducido.\n\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491136163074"
   },
-  "abogac\u00eda": {
-    "descripcion": "🎓 Programa dise\u00f1ado para formar profesionales innovadores con preparaci\u00f3n en nuevas competencias del derecho...",
+
+  "abogacía": {
+    "descripcion": "🎓 El programa fue diseñado para formar a profesionales innovadores, con preparación para las nuevas competencias y conocimientos que se demanden en la justicia y responder a los nuevos formatos laborales.\n\n⚖ Podrás ejercer en áreas tradicionales como la comercial, penal, civil, laboral, tributaria, y en nuevas ramas como las tecnológicas, ambientales, mercado de la moda y la propiedad de ideas en la sociedad de conocimiento.\n\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 17 a 22.30 h.\n\n➡ Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas y estudios.\n\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.\n\n🥳 Becas especiales para futuros abogados.",
     "asesor": "5491136786247"
   }
 }
+
