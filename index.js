@@ -1,25 +1,34 @@
 const express = require('express');
+const getRawBody = require('raw-body');
 const fs = require('fs');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware para formularios URL encoded primero
+// Middleware para capturar el body RAW antes de parsearlo
+app.use(async (req, res, next) => {
+  try {
+    const raw = await getRawBody(req);
+    console.log('Body RAW recibido:', raw.toString());
+    next();
+  } catch (err) {
+    next(err);
+  }
+});
+
+// Middleware para URL encoded (formularios)
 app.use(express.urlencoded({ extended: true }));
 
-// Middleware para JSON después
+// Middleware para JSON
 app.use(express.json());
 
-// Cargo el menú desde un archivo JSON
+// Cargo el menú desde un JSON local
 let menu = JSON.parse(fs.readFileSync('menu.json', 'utf8'));
 
 app.post('/message.php', (req, res) => {
-  // Log para verificar el content-type que llega
   console.log('Content-Type recibido:', req.headers['content-type']);
-
-  // Log del body para ver qué llegó ya parseado
   console.log('Body recibido:', req.body);
 
-  const { message, sender, phone } = req.body;
+  const { message, sender, phone } = req.body || {};
 
   const rawMessage = String(message || "");
   const clave = rawMessage.trim().toLowerCase();
@@ -42,6 +51,11 @@ app.post('/message.php', (req, res) => {
 app.get("/", (req, res) => {
   res.send("🟢 Servidor WhatsAuto activo");
 });
+
+app.listen(PORT, () => {
+  console.log(`✅ Servidor escuchando en http://localhost:${PORT}`);
+});
+
 
 app.listen(PORT, () => {
   console.log(`✅ Servidor escuchando en http://localhost:${PORT}`);
