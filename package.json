@@ -1,5 +1,4 @@
 {
-{
   "name": "whatsauto-server",
   "version": "1.0.0",
   "main": "index.js",
@@ -11,3 +10,4 @@
     "raw-body": "^2.4.1"
   }
 }
+
