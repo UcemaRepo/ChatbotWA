@@ -25,22 +25,42 @@ app.use(express.json());
 // Cargo el menú desde un JSON local
 let menu = JSON.parse(fs.readFileSync('menu.json', 'utf8'));
 
+// Mapeo de opciones numéricas → nombres clave del menú
+const opcionesNumericas = {
+  "1": "ingeniería en inteligencia artificial",
+  "2": "ingeniería en informática",
+  "3": "licenciatura en negocios digitales",
+  "4": "licenciatura en finanzas",
+  "5": "licenciatura en economía",
+  "6": "licenciatura en economía empresarial",
+  "7": "licenciatura en administración de empresas",
+  "8": "licenciatura en marketing",
+  "9": "licenciatura en artes liberales y ciencias",
+  "10": "licenciatura en ciencias políticas",
+  "11": "licenciatura en relaciones internacionales",
+  "12": "licenciatura en analítica de negocios",
+  "13": "actuario",
+  "14": "contador público",
+  "15": "abogacía"
+};
+
 app.post('/message.php', (req, res) => {
   console.log('Content-Type recibido:', req.headers['content-type']);
   console.log('Body recibido:', req.body);
 
   let mensajeTexto = req.body?.message || '';
   if (!mensajeTexto && req.rawBodyText) {
-    // Parseamos si vino en formato application/x-www-form-urlencoded manualmente
     const params = new URLSearchParams(req.rawBodyText);
     mensajeTexto = params.get('message') || '';
   }
 
-  const clave = mensajeTexto.trim().toLowerCase();
-  console.log("🔑 Clave normalizada:", clave);
+  const claveEntrada = mensajeTexto.trim().toLowerCase();
+  console.log("🔑 Clave normalizada:", claveEntrada);
 
-  if (menu[clave]) {
-    const respuesta = `${menu[clave].descripcion}\n👉 Contactá con un asesor: https://wa.me/${menu[clave].asesor}?text=Estoy%20interesado%20en%20la%20${encodeURIComponent(clave)}`;
+  const claveFinal = opcionesNumericas[claveEntrada] || claveEntrada;
+
+  if (menu[claveFinal]) {
+    const respuesta = `${menu[claveFinal].descripcion}\n👉 Contactá con un asesor: https://wa.me/${menu[claveFinal].asesor}?text=Estoy%20interesado%20en%20la%20${encodeURIComponent(claveFinal)}`;
     console.log(`📤 Respuesta enviada: "${respuesta}"`);
     res.json({ reply: respuesta });
   } else {
@@ -56,6 +76,7 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`✅ Servidor escuchando en http://localhost:${PORT}`);
 });
+
 
 
 
