@@ -1,7 +1,19 @@
 {
-  "default": "Hola 👋 ¿En qué puedo ayudarte?\n1. Cursos\n2. Horarios\n3. Hablar con asesor",
-  "1": "Nuestros cursos son: Marketing, Finanzas y Programación.",
-  "2": "Nuestro horario de atención es de Lunes a Viernes de 9 a 18 hs.",
-  "3": "Un asesor se comunicará con vos en breve.",
-  "hola": "¡Hola! ¿Cómo puedo ayudarte?"
+  "default": "¡Hola, gracias por comunicarte con UCEMA! ¿En qué carreras estás interesado?\n\n1: Ingeniería en Inteligencia Artificial\n\n2: Ingeniería en Informática\n\n3: Licenciatura en Negocios Digitales\n\n4: Licenciatura en Finanzas\n\n5: Licenciatura en Economía\n\n6: Licenciatura en Economía Empresarial\n\n7: Licenciatura en Administración de Empresas\n\n8: Licenciatura en Marketing\n\n9: Licenciatura en Artes Liberales y Ciencias (BA)\n\n10: Licenciatura en Ciencias Políticas\n\n11: Licenciatura en Relaciones Internacionales\n\n12: Licenciatura en Analítica de Negocios\n\n13: Actuario\n\n14: Contador Público\n\n15: Abogacía",
+  
+  "1": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491159644863?text=Estoy+interesado+en+Ingeniería+en+Inteligencia+Artificial",
+  "2": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491141815223?text=Estoy+interesado+en+Ingeniería+en+Informática",
+  "3": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491122688912?text=Estoy+interesado+en+Licenciatura+en+Negocios+Digitales",
+  "4": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491141815223?text=Estoy+interesado+en+Licenciatura+en+Finanzas",
+  "5": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491159644863?text=Estoy+interesado+en+Licenciatura+en+Economía",
+  "6": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491136163074?text=Estoy+interesado+en+Licenciatura+en+Economía+Empresarial",
+  "7": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491136163074?text=Estoy+interesado+en+Licenciatura+en+Administración+de+Empresas",
+  "8": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491140888081?text=Estoy+interesado+en+Licenciatura+en+Marketing",
+  "9": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491141815223?text=Estoy+interesado+en+Licenciatura+en+Artes+Liberales+y+Ciencias+(BA)",
+  "10": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491136786247?text=Estoy+interesado+en+Licenciatura+en+Ciencias+Políticas",
+  "11": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491136786247?text=Estoy+interesado+en+Licenciatura+en+Relaciones+Internacionales",
+  "12": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491140888081?text=Estoy+interesado+en+Licenciatura+en+Analítica+de+Negocios",
+  "13": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491122688912?text=Estoy+interesado+en+Actuario",
+  "14": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491136163074?text=Estoy+interesado+en+Contador+Público",
+  "15": "Te dejo un link para que seas redirigido con uno de nuestros asesores especializados: https://wa.me/5491136786247?text=Estoy+interesado+en+Abogacía"
 }
