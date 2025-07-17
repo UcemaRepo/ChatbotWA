@@ -54,7 +54,22 @@ app.post('/message.php', (req, res) => {
   const claveEntrada = mensajeTexto.trim().toLowerCase();
   const sender = req.body?.sender || 'anonimo';
 
-  if (!estadosUsuarios[sender]) estadosUsuarios[sender] = { menu: "root" };
+  // Control tiempo: resetear si pasó más de 1 hora sin mensaje
+  const ahora = Date.now();
+  if (!estadosUsuarios[sender]) {
+    estadosUsuarios[sender] = { menu: "root", lastTimestamp: ahora };
+  } else {
+    const diffSegundos = (ahora - estadosUsuarios[sender].lastTimestamp) / 1000;
+    if (diffSegundos > 3600) {
+      // Resetear estado
+      estadosUsuarios[sender] = { menu: "root", lastTimestamp: ahora };
+      // Responder con mensaje inicial y salir
+      return res.json({ reply: menu.default });
+    }
+  }
+  // Actualizar timestamp
+  estadosUsuarios[sender].lastTimestamp = ahora;
+
   const estado = estadosUsuarios[sender];
 
   if (estado.menu === "root") {
