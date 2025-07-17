@@ -25,23 +25,22 @@ app.use(express.json());
 // Cargo el menú desde un JSON local
 let menu = JSON.parse(fs.readFileSync('menu.json', 'utf8'));
 
-// Mapeo de opciones numéricas → nombres clave del menú
-const opcionesNumericas = {
-  "1": "ingeniería en inteligencia artificial",
-  "2": "ingeniería en informática",
-  "3": "licenciatura en negocios digitales",
-  "4": "licenciatura en finanzas",
-  "5": "licenciatura en economía",
-  "6": "licenciatura en economía empresarial",
-  "7": "licenciatura en administración de empresas",
-  "8": "licenciatura en marketing",
-  "9": "licenciatura en artes liberales y ciencias",
-  "10": "licenciatura en ciencias políticas",
-  "11": "licenciatura en relaciones internacionales",
-  "12": "licenciatura en analítica de negocios",
-  "13": "actuario",
-  "14": "contador público",
-  "15": "abogacía"
+// Estado de navegación de cada usuario
+const estadosUsuarios = {};
+
+// Submenús por área
+const submenus = {
+  "1": ["licenciatura en administracion de empresas", "licenciatura en marketing", "licenciatura en negocios digitales", "licenciatura en analitica de negocios"],
+  "2": ["licenciatura en finanzas", "actuario", "contador publico"],
+  "3": ["licenciatura en economia", "licenciatura en economia empresarial"],
+  "4": ["ingenieria en inteligencia artificial", "ingenieria en informatica"],
+  "5": ["licenciatura en ciencias politicas", "licenciatura en relaciones internacionales", "abogacia"],
+  "6": ["licenciatura en artes liberales y ciencias"]
+};
+
+// Opciones numericas dinámicamente generadas
+const generarOpciones = (area) => {
+  return submenus[area].map((clave, index) => `${index + 1}️⃣ ${menu[clave].nombre}`).join("\n") + "\n0️⃣ Menú anterior";
 };
 
 app.post('/message.php', (req, res) => {
@@ -55,17 +54,36 @@ app.post('/message.php', (req, res) => {
   }
 
   const claveEntrada = mensajeTexto.trim().toLowerCase();
-  console.log("🔑 Clave normalizada:", claveEntrada);
+  const sender = req.body?.sender || 'anonimo';
 
-  const claveFinal = opcionesNumericas[claveEntrada] || claveEntrada;
+  // Estado actual del usuario
+  if (!estadosUsuarios[sender]) estadosUsuarios[sender] = { menu: "root" };
 
-  if (menu[claveFinal]) {
-    const respuesta = `${menu[claveFinal].descripcion}\n👉 Contactá con un asesor: https://wa.me/${menu[claveFinal].asesor}?text=Estoy%20interesado%20en%20la%20${encodeURIComponent(claveFinal)}`;
-    console.log(`📤 Respuesta enviada: "${respuesta}"`);
-    res.json({ reply: respuesta });
+  const estado = estadosUsuarios[sender];
+
+  if (estado.menu === "root") {
+    if (submenus[claveEntrada]) {
+      estado.menu = claveEntrada;
+      const titulo = Object.keys(submenus)[claveEntrada - 1];
+      const opciones = generarOpciones(claveEntrada);
+      res.json({ reply: `${menu.default}\n\n${opciones}` });
+    } else {
+      res.json({ reply: menu.default });
+    }
   } else {
-    console.log("📤 Respuesta enviada (default):", menu.default);
-    res.json({ reply: menu.default });
+    if (claveEntrada === "0") {
+      estado.menu = "root";
+      res.json({ reply: menu.default });
+    } else {
+      const index = parseInt(claveEntrada) - 1;
+      const claveCarrera = submenus[estado.menu]?.[index];
+      if (claveCarrera && menu[claveCarrera]) {
+        const respuesta = `${menu[claveCarrera].descripcion}\n👉 Contactá con un asesor: https://wa.me/${menu[claveCarrera].asesor}?text=Estoy%20interesado%20en%20la%20${encodeURIComponent(claveCarrera)}`;
+        res.json({ reply: respuesta });
+      } else {
+        res.json({ reply: "Opción inválida. Por favor seleccioná una opción del menú o escribí 0 para volver." });
+      }
+    }
   }
 });
 
@@ -76,7 +94,6 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`✅ Servidor escuchando en http://localhost:${PORT}`);
 });
-
 
 
 
