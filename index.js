@@ -28,43 +28,21 @@ let menu = JSON.parse(fs.readFileSync('menu.json', 'utf8'));
 // Estado de navegación de cada usuario
 const estadosUsuarios = {};
 
-// Submenús por área usando códigos "X" para área y "X.Y" para carrera
+// Submenús por área con las claves que coinciden con tu JSON
 const submenus = {
-  "1": {
-    "1.1": "administracion de empresas",
-    "1.2": "marketing",
-    "1.3": "negocios digitales",
-    "1.4": "analitica de negocios"
-  },
-  "2": {
-    "2.1": "finanzas",
-    "2.2": "actuario",
-    "2.3": "contador publico"
-  },
-  "3": {
-    "3.1": "economia",
-    "3.2": "economia empresarial"
-  },
-  "4": {
-    "4.1": "ingenieria en inteligencia artificial",
-    "4.2": "ingenieria en informatica"
-  },
-  "5": {
-    "5.1": "ciencias politicas",
-    "5.2": "relaciones internacionales",
-    "5.3": "abogacia"
-  },
-  "6": {
-    "6.1": "ba - artes liberales y ciencias"
-  }
+  "1": ["1.1", "1.2", "1.3", "1.4"],       // Negocios
+  "2": ["2.1", "2.2", "2.3"],              // Finanzas, riesgo y gestión
+  "3": ["3.1", "3.2"],                     // Economía
+  "4": ["4.1", "4.2"],                     // Ingeniería y tecnología
+  "5": ["5.1", "5.2", "5.3"],              // Sociales
+  "6": ["6.1"]                             // BA - Artes Liberales y Ciencias
 };
 
-// Función para generar texto de opciones del submenú con números simples
+// Función para generar las opciones del submenú dinámicamente
 const generarOpciones = (area) => {
-  const opciones = Object.keys(submenus[area])
-    .map((codigo, index) => `${index + 1}️⃣ ${menu[submenus[area][codigo]].nombre}`)
-    .join("\n");
-  return opciones + "\n0️⃣ Menú anterior";
+  return submenus[area]
+    .map((clave, index) => `${index + 1}️⃣ ${menu[clave].nombre}`)
+    .join("\n") + "\n0️⃣ Menú anterior";
 };
 
 app.post('/message.php', (req, res) => {
@@ -80,46 +58,33 @@ app.post('/message.php', (req, res) => {
   const claveEntrada = mensajeTexto.trim().toLowerCase();
   const sender = req.body?.sender || 'anonimo';
 
+  // Estado actual del usuario
   if (!estadosUsuarios[sender]) estadosUsuarios[sender] = { menu: "root" };
+
   const estado = estadosUsuarios[sender];
 
   if (estado.menu === "root") {
-    // Esperamos respuesta 1..6 para seleccionar área
     if (submenus[claveEntrada]) {
-      estado.menu = claveEntrada; // Guardamos área actual
+      estado.menu = claveEntrada;
       const opciones = generarOpciones(claveEntrada);
-      res.json({ reply: `${menu.default}\n\n${opciones}` });
+      res.json({ reply: opciones });
     } else {
+      // Mostrar el menú inicial
       res.json({ reply: menu.default });
     }
   } else {
-    // Estamos en un submenú de área
     if (claveEntrada === "0") {
       estado.menu = "root";
       res.json({ reply: menu.default });
     } else {
-      // Convertimos la opción simple a código submenú (ej: "1" -> "1.1", "2" -> "1.2", etc)
-      const opcionIndex = parseInt(claveEntrada, 10);
-      if (isNaN(opcionIndex)) {
-        res.json({ reply: "❌ Opción inválida. Por favor seleccioná una opción del menú o escribí 0 para volver." });
-        return;
-      }
-
-      const area = estado.menu;
-      const keys = Object.keys(submenus[area]);
-      const codigoSeleccionado = keys[opcionIndex - 1];
-      if (!codigoSeleccionado) {
-        res.json({ reply: "❌ Opción inválida. Por favor seleccioná una opción del menú o escribí 0 para volver." });
-        return;
-      }
-
-      const carreraClave = submenus[area][codigoSeleccionado];
-      if (menu[carreraClave]) {
-        const { nombre, descripcion, asesor } = menu[carreraClave];
-        const respuesta = `📚 *${nombre}*\n\n${descripcion}\n\n🔗 Contactá con un asesor: https://wa.me/${asesor}?text=Estoy%20interesado%20en%20la%20${encodeURIComponent(nombre)}`;
+      const index = parseInt(claveEntrada) - 1;
+      const claveCarrera = submenus[estado.menu]?.[index];
+      if (claveCarrera && menu[claveCarrera]) {
+        const { nombre, descripcion, asesor } = menu[claveCarrera];
+        const respuesta = `📚 *${nombre}*\n\n${descripcion}\n\n🔗 https://wa.me/${asesor}`;
         res.json({ reply: respuesta });
       } else {
-        res.json({ reply: "❌ Carrera no encontrada. Por favor seleccioná una opción válida." });
+        res.json({ reply: "❌ Opción inválida. Por favor seleccioná una opción del menú o escribí 0 para volver." });
       }
     }
   }
@@ -132,6 +97,7 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`✅ Servidor escuchando en http://localhost:${PORT}`);
 });
+
 
 
 
