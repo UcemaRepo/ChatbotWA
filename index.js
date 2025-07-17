@@ -8,7 +8,6 @@ const PORT = process.env.PORT || 3000;
 app.use(async (req, res, next) => {
   try {
     const raw = await getRawBody(req);
-    console.log('Body RAW recibido:', raw.toString());
     req.rawBodyText = raw.toString();
     next();
   } catch (err) {
@@ -28,27 +27,24 @@ let menu = JSON.parse(fs.readFileSync('menu.json', 'utf8'));
 // Estado de navegación de cada usuario
 const estadosUsuarios = {};
 
-// Submenús por área con las claves que coinciden con tu JSON
+// Submenús por área
 const submenus = {
-  "1": ["1.1", "1.2", "1.3", "1.4"],       // Negocios
-  "2": ["2.1", "2.2", "2.3"],              // Finanzas, riesgo y gestión
-  "3": ["3.1", "3.2"],                     // Economía
-  "4": ["4.1", "4.2"],                     // Ingeniería y tecnología
-  "5": ["5.1", "5.2", "5.3"],              // Sociales
-  "6": ["6.1"]                             // BA - Artes Liberales y Ciencias
+  "1": ["1.1", "1.2", "1.3", "1.4"],
+  "2": ["2.1", "2.2", "2.3"],
+  "3": ["3.1", "3.2"],
+  "4": ["4.1", "4.2"],
+  "5": ["5.1", "5.2", "5.3"],
+  "6": ["6.1"]
 };
 
-// Función para generar las opciones del submenú dinámicamente
+// Opciones numericas dinámicamente generadas
 const generarOpciones = (area) => {
   return submenus[area]
-    .map((clave, index) => `${index + 1}️⃣ ${menu[clave].nombre}`)
+    .map((clave, index) => `${index + 1}️⃣ ${menu[clave]?.nombre || "Carrera desconocida"}`)
     .join("\n") + "\n0️⃣ Menú anterior";
 };
 
 app.post('/message.php', (req, res) => {
-  console.log('Content-Type recibido:', req.headers['content-type']);
-  console.log('Body recibido:', req.body);
-
   let mensajeTexto = req.body?.message || '';
   if (!mensajeTexto && req.rawBodyText) {
     const params = new URLSearchParams(req.rawBodyText);
@@ -58,18 +54,16 @@ app.post('/message.php', (req, res) => {
   const claveEntrada = mensajeTexto.trim().toLowerCase();
   const sender = req.body?.sender || 'anonimo';
 
-  // Estado actual del usuario
   if (!estadosUsuarios[sender]) estadosUsuarios[sender] = { menu: "root" };
-
   const estado = estadosUsuarios[sender];
 
   if (estado.menu === "root") {
     if (submenus[claveEntrada]) {
       estado.menu = claveEntrada;
+      const intro = menu.intro?.[claveEntrada] || '';
       const opciones = generarOpciones(claveEntrada);
-      res.json({ reply: opciones });
+      res.json({ reply: `${intro}\n\n${opciones}` });
     } else {
-      // Mostrar el menú inicial
       res.json({ reply: menu.default });
     }
   } else {
@@ -80,11 +74,12 @@ app.post('/message.php', (req, res) => {
       const index = parseInt(claveEntrada) - 1;
       const claveCarrera = submenus[estado.menu]?.[index];
       if (claveCarrera && menu[claveCarrera]) {
-        const { nombre, descripcion, asesor } = menu[claveCarrera];
-        const respuesta = `📚 *${nombre}*\n\n${descripcion}\n\n🔗 https://wa.me/${asesor}`;
+        const respuesta = `${menu[claveCarrera].descripcion}\n👉 Contactá con un asesor: https://wa.me/${menu[claveCarrera].asesor}?text=Estoy%20interesado%20en%20la%20${encodeURIComponent(menu[claveCarrera].nombre)}`;
         res.json({ reply: respuesta });
       } else {
-        res.json({ reply: "❌ Opción inválida. Por favor seleccioná una opción del menú o escribí 0 para volver." });
+        // En submenú pero el número no corresponde
+        const opciones = generarOpciones(estado.menu);
+        res.json({ reply: `❌ Opción inválida. Por favor elegí una opción del menú.\n\n${opciones}` });
       }
     }
   }
