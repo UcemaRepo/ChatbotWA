@@ -1,99 +1,93 @@
 {
   "default": "👋 ¡Hola! Soy el asistente virtual del Departamento de Admisiones de Grado de UCEMA.\n\nEstoy acá para ayudarte a elegir qué querés estudiar...\n\n💥 O mejor dicho: quién querés ser.\nTenemos carreras en 6 áreas donde el futuro ya está pasando:\n\n1️⃣ Negocios\n2️⃣ Finanzas, riesgo y gestión\n3️⃣ Economía\n4️⃣ Ingeniería y tecnología\n5️⃣ Sociales\n6️⃣ BA - Artes Liberales y Ciencias\n🎯 Elegir una carrera no es fácil. Pero si te quedás, te cuento por qué UCEMA no es para cualquiera.\n¿Empezamos?\n\n(Respondé con el número para ver las opciones de cada área.)",
 
-  "1": "📈 Área: Negocios\n1️⃣ Administración de Empresas\n2️⃣ Marketing\n3️⃣ Negocios Digitales\n4️⃣ Analítica de Negocios\n0️⃣ Volver al menú anterior",
-  "2": "💰 Área: Finanzas, riesgo y gestión\n1️⃣ Finanzas\n2️⃣ Actuario\n3️⃣ Contador Público\n0️⃣ Volver al menú anterior",
-  "3": "📉 Área: Economía\n1️⃣ Economía\n2️⃣ Economía Empresarial\n0️⃣ Volver al menú anterior",
-  "4": "🤖 Área: Ingeniería y tecnología\n1️⃣ Ingeniería en Inteligencia Artificial\n2️⃣ Ingeniería en Informática\n0️⃣ Volver al menú anterior",
-  "5": "🏛️ Área: Sociales\n1️⃣ Ciencias Políticas\n2️⃣ Relaciones Internacionales\n3️⃣ Abogacía\n0️⃣ Volver al menú anterior",
-  "6": "🧬 Área: BA - Artes Liberales y Ciencias\n1️⃣ BA - Artes Liberales y Ciencias\n0️⃣ Volver al menú anterior",
-
-  "administracion de empresas": {
+  "1.1": {
     "nombre": "Administración de Empresas",
-    "descripcion": "¿Querés liderar equipos, abrir tu startup o dirigir una empresa global?\nEsta carrera es el campo de entrenamiento para quienes toman decisiones y no esperan órdenes.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.\n🎯 Te dejo un link para que seas redirigido con uno de nuestros asesores especializados.",
+    "descripcion": "¿Querés liderar equipos, abrir tu startup o dirigir una empresa global?\nEsta carrera es el campo de entrenamiento para quienes toman decisiones y no esperan órdenes.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491136163074"
   },
 
-  "marketing": {
+  "1.2": {
     "nombre": "Marketing",
-    "descripcion": "¿Querés crear marcas que la rompan y campañas que nadie pueda ignorar?\nAcá aprendés a conectar con personas, mover emociones y vender ideas.\nSpoiler: vas a necesitar algo más que likes.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.\n🎯 Te dejo un link para que seas redirigido con uno de nuestros asesores especializados.",
+    "descripcion": "¿Querés crear marcas que la rompan y campañas que nadie pueda ignorar?\nAcá aprendés a conectar con personas, mover emociones y vender ideas.\nSpoiler: vas a necesitar algo más que likes.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491140888081"
   },
 
-  "negocios digitales": {
+  "1.3": {
     "nombre": "Negocios Digitales",
-    "descripcion": "¿Sos de los que piensa que Instagram, e-commerce y data no son ‘el futuro’, sino el ahora?\nEsta carrera combina tecnología, marketing y estrategia para crear negocios que escalan.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.\n🎯 Te dejo un link para que seas redirigido con uno de nuestros asesores especializados.",
+    "descripcion": "¿Sos de los que piensa que Instagram, e-commerce y data no son ‘el futuro’, sino el ahora?\nEsta carrera combina tecnología, marketing y estrategia para crear negocios que escalan.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491122688912"
   },
 
-  "analitica de negocios": {
+  "1.4": {
     "nombre": "Analítica de Negocios",
-    "descripcion": "¿Te gusta entender los ‘por qué’ detrás de lo que funciona (y lo que no)?\nAcá transformás datos en decisiones que valen millones.\nNo es magia, es análisis.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.\n🎯 Te dejo un link para que seas redirigido con uno de nuestros asesores especializados.",
+    "descripcion": "¿Te gusta entender los ‘por qué’ detrás de lo que funciona (y lo que no)?\nAcá transformás datos en decisiones que valen millones.\nNo es magia, es análisis.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491140888081"
   },
-"finanzas": {
+
+  "2.1": {
     "nombre": "Finanzas",
-    "descripcion": "¿Te obsesionan los mercados, las inversiones y los grandes movimientos de plata?\nEsta carrera es para quienes quieren entender el juego... y ganar en él.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.\n🎯 Te dejo un link para que seas redirigido con uno de nuestros asesores especializados.",
+    "descripcion": "¿Te obsesionan los mercados, las inversiones y los grandes movimientos de plata?\nEsta carrera es para quienes quieren entender el juego... y ganar en él.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491141815223"
   },
 
-  "actuario": {
+  "2.2": {
     "nombre": "Actuario",
-    "descripcion": "¿Sos fan del riesgo... pero te gusta tenerlo bajo control?\nConvertite en el cerebro que usan bancos, aseguradoras y empresas para anticiparse al futuro.\nSpoiler: sin actuariales, nada funciona.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.\n🎯 Te dejo un link para que seas redirigido con uno de nuestros asesores especializados.",
+    "descripcion": "¿Sos fan del riesgo... pero te gusta tenerlo bajo control?\nConvertite en el cerebro que usan bancos, aseguradoras y empresas para anticiparse al futuro.\nSpoiler: sin actuariales, nada funciona.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491122688912"
   },
 
-  "contador publico": {
+  "2.3": {
     "nombre": "Contador Público",
-    "descripcion": "¿Te gustan los números, pero más aún lo que revelan?\nEsta carrera te prepara para auditar, planificar y liderar desde el lado más sólido del negocio.\nSí, sos contador. Pero no sos uno más.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h los dos primeros años y los últimos dos de 18.30 a 22.30h.\n🎓 Doble titulación en un plazo reducido.\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.\n🎯 Te dejo un link para que seas redirigido con uno de nuestros asesores especializados.",
+    "descripcion": "¿Te gustan los números, pero más aún lo que revelan?\nEsta carrera te prepara para auditar, planificar y liderar desde el lado más sólido del negocio.\nSí, sos contador. Pero no sos uno más.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h los dos primeros años y los últimos dos de 18.30 a 22.30h.\n🎓 Doble titulación en un plazo reducido.\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491136163074"
   },
 
-  "economia": {
+  "3.1": {
     "nombre": "Economía",
-    "descripcion": "¿Querés entender cómo se mueve el mundo (de verdad)?\nEsta carrera es para los que buscan explicaciones, no suposiciones.\nAcá se forman los que desafían modelos... y los crean.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.\n🎯 Te dejo un link para que seas redirigido con uno de nuestros asesores especializados.",
+    "descripcion": "¿Querés entender cómo se mueve el mundo (de verdad)?\nEsta carrera es para los que buscan explicaciones, no suposiciones.\nAcá se forman los que desafían modelos... y los crean.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491159644863"
   },
 
-  "economia empresarial": {
+  "3.2": {
     "nombre": "Economía Empresarial",
-    "descripcion": "¿Te interesa la economía, pero con foco en empresas y negocios reales?\nEsta carrera combina teoría dura con visión estratégica.\nEs como estudiar Economía, pero pensando como CEO.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.\n🎯 Te dejo un link para que seas redirigido con uno de nuestros asesores especializados.",
+    "descripcion": "¿Te interesa la economía, pero con foco en empresas y negocios reales?\nEsta carrera combina teoría dura con visión estratégica.\nEs como estudiar Economía, pero pensando como CEO.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n📈 Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈️ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491136163074"
   },
 
-  "ingenieria en inteligencia artificial": {
+  "4.1": {
     "nombre": "Ingeniería en Inteligencia Artificial",
-    "descripcion": "¿Querés crear lo que todos dicen que va a cambiar el mundo?\nAcá no venís a usar IA. Venís a diseñarla.\nSi te va la tecnología, pero también pensar en grande, este es tu lugar.\n📝 Plan de estudios: 5 años. Título intermedio de Analista en Inteligencia Artificial al finalizar el segundo año.\n🏛 Modalidad presencial en la Ciudad de Buenos Aires.\n🕓 Cursada diurna (9 a 15 h) los primeros años.\n🧪 Prácticas profesionales supervisadas + Proyecto Final Integrador con casos reales.\n✈ Posibilidad de cursar materias en universidades del exterior a través del programa freemover.\n🎯 Te dejo un link para que seas redirigido con uno de nuestros asesores especializados.",
+    "descripcion": "¿Querés crear lo que todos dicen que va a cambiar el mundo?\nAcá no venís a usar IA. Venís a diseñarla.\nSi te va la tecnología, pero también pensar en grande, este es tu lugar.\n📝 Plan de estudios: 5 años. Título intermedio de Analista en Inteligencia Artificial al finalizar el segundo año.\n🏛 Modalidad presencial en la Ciudad de Buenos Aires.\n🕓 Cursada diurna (9 a 15 h) los primeros años.\n🧪 Prácticas profesionales supervisadas + Proyecto Final Integrador con casos reales.\n✈ Posibilidad de cursar materias en universidades del exterior a través del programa freemover.",
     "asesor": "5491159644863"
   },
 
-  "ingenieria en informatica": {
+  "4.2": {
     "nombre": "Ingeniería en Informática",
-    "descripcion": "¿Sos de los que arma, desarma y vuelve a crear sistemas que funcionan mejor?\nEsta carrera es para los que quieren programar el futuro… literalmente.\nPorque saber código hoy no es ventaja. Es poder.\n📝 Plan de estudios: 5 años. Cursada presencial en la Ciudad de Buenos Aires de lunes a viernes de 18:30 a 22:30 h. A partir de 3º año se implementa la cursada híbrida.\n➡ Prácticas laborales locales: Convenios para realizar pasantías laborales en las mejores empresas.\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.\n🎯 Te dejo un link para que seas redirigido con uno de nuestros asesores especializados.",
+    "descripcion": "¿Sos de los que arma, desarma y vuelve a crear sistemas que funcionan mejor?\nEsta carrera es para los que quieren programar el futuro… literalmente.\nPorque saber código hoy no es ventaja. Es poder.\n📝 Plan de estudios: 5 años. Cursada presencial en la Ciudad de Buenos Aires de lunes a viernes de 18:30 a 22:30 h. A partir de 3º año se implementa la cursada híbrida.\n➡ Prácticas laborales locales: Convenios para realizar pasantías laborales en las mejores empresas.\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491141815223"
   },
 
-  "ciencias politicas": {
+  "5.1": {
     "nombre": "Ciencias Políticas",
-    "descripcion": "¿Querés entender el poder y aprender a usarlo bien?\nAcá formás parte de la próxima generación que piensa, debate y actúa.\nSpoiler: no venís a quejarte. Venís a cambiar las reglas.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n➡ Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈ Posibilidad de cursar un semestre en universidades del extranjero.\n🎯 Te dejo un link para que seas redirigido con uno de nuestros asesores especializados.",
+    "descripcion": "¿Querés entender el poder y aprender a usarlo bien?\nAcá formás parte de la próxima generación que piensa, debate y actúa.\nSpoiler: no venís a quejarte. Venís a cambiar las reglas.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n➡ Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈ Posibilidad de cursar un semestre en universidades del extranjero.",
     "asesor": "5491136786247"
   },
 
-  "relaciones internacionales": {
+  "5.2": {
     "nombre": "Relaciones Internacionales",
-    "descripcion": "¿Te interesa el juego global, los países, las ideas y los conflictos?\nEsta carrera te conecta con el mundo… pero en serio.\nIdeal para quienes ven un mapa y piensan en estrategia.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n➡ Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.\n🎯 Te dejo un link para que seas redirigido con uno de nuestros asesores especializados.",
+    "descripcion": "¿Te interesa el juego global, los países, las ideas y los conflictos?\nEsta carrera te conecta con el mundo… pero en serio.\nIdeal para quienes ven un mapa y piensan en estrategia.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n➡ Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491136786247"
   },
 
-  "abogacia": {
+  "5.3": {
     "nombre": "Abogacía",
-    "descripcion": "¿Sentís que hay cosas que no pueden quedar así nomás?\nEsta carrera es para quienes quieren defender, argumentar y transformar desde el derecho.\nNo es solo leyes. Es justicia, poder y decisión.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 17 a 22.30 h.\n➡ Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas y estudios.\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.\n🥳 Becas especiales para futuros abogados.\n🎯 Te dejo un link para que seas redirigido con uno de nuestros asesores especializados.",
+    "descripcion": "¿Sentís que hay cosas que no pueden quedar así nomás?\nEsta carrera es para quienes quieren defender, argumentar y transformar desde el derecho.\nNo es solo leyes. Es justicia, poder y decisión.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 17 a 22.30 h.\n➡ Prácticas laborales locales: convenios para realizar pasantías laborales en las mejores empresas y estudios.\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.\n🥳 Becas especiales para futuros abogados.",
     "asesor": "5491136786247"
   },
 
-  "ba - artes liberales y ciencias": {
+  "6.1": {
     "nombre": "BA - Artes Liberales y Ciencias",
-    "descripcion": "¿No encajás en un molde y eso te encanta?\nEsta carrera es para los que piensan distinto, conectan ideas y se hacen las preguntas que nadie más se hace.\nUna formación amplia, profunda y desafiante.\nNo es para cualquiera.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n➡ Prácticas laborales locales; convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.\n🎯 Te dejo un link para que seas redirigido con uno de nuestros asesores especializados.",
+    "descripcion": "¿No encajás en un molde y eso te encanta?\nEsta carrera es para los que piensan distinto, conectan ideas y se hacen las preguntas que nadie más se hace.\nUna formación amplia, profunda y desafiante.\nNo es para cualquiera.\n📝 Plan de estudios: 4 años. Cursada presencial en Ciudad de Buenos Aires de lunes a viernes de 9 a 15 h.\n➡ Prácticas laborales locales; convenios para realizar pasantías laborales en las mejores empresas.\n🎓 Doble titulación en un plazo reducido.\n✈ Posibilidad de cursar un semestre en universidades del extranjero a través de intercambios.",
     "asesor": "5491141815223"
   }
 }
