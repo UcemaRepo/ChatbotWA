@@ -2,17 +2,17 @@
   "default": "👋 ¡Hola! Soy el asistente virtual del Departamento de Admisiones de Grado de UCEMA.\n\nEstoy acá para ayudarte a elegir qué querés estudiar...\n\n💥 O mejor dicho: quién querés ser.\nTenemos carreras en 6 áreas donde el futuro ya está pasando:\n\n1️⃣ Negocios\n2️⃣ Finanzas, riesgo y gestión\n3️⃣ Economía\n4️⃣ Ingeniería y tecnología\n5️⃣ Sociales\n6️⃣ BA - Artes Liberales y Ciencias\n🎯 Elegir una carrera no es fácil. Pero si te quedás, te cuento por qué UCEMA no es para cualquiera.\n¿Empezamos?\n\n(Respondé con el número para ver las opciones de cada área.)",
 
 "intro": {
-  "1": "Negocios\n¿Querés liderar, crear o romper el mercado?\nAcá nacen los próximos CEOs, marketers que entienden al consumidor y mentes que convierten datos en decisiones.\n1️⃣Administración de Empresas\n2️⃣Marketing\n3️⃣Negocios Digitales\n4️⃣Analítica de Negocios Digitales.\nVos elegís el juego. Nosotros te damos las reglas… y cómo romperlas.",
+  "1": "Negocios\n¿Querés liderar, crear o romper el mercado?\nAcá nacen los próximos CEOs, marketers que entienden al consumidor y mentes que convierten datos en decisiones. Vos elegís el juego. Nosotros te damos las reglas… y cómo romperlas.",
   
-  "2": "Finanzas, riesgo y gestión\nSi ves números y pensás en oportunidades, este es tu lugar.\nFormamos cracks en finanzas, expertos en riesgo y contadores que entienden el negocio, no solo los balances.\n1️⃣Finanzas\n2️⃣Actuario\n3️⃣Contador Público.\nEl mundo se mueve con plata. ¿Vas a mirar o a moverla?",
+  "2": "Finanzas, riesgo y gestión\nSi ves números y pensás en oportunidades, este es tu lugar.\nFormamos cracks en finanzas, expertos en riesgo y contadores que entienden el negocio, no solo los balances. ¿Vas a mirar o a moverla?",
   
-  "3": "Economía\n¿Te interesa cómo funcionan los países, las empresas y el mundo?\nAcá pensás en grande, analizás modelos y entendés lo que pocos entienden.\n1️⃣Economía\n2️⃣Economía Empresarial.\nPorque opinar es fácil. Argumentar con datos, no tanto.",
+  "3": "Economía\n¿Te interesa cómo funcionan los países, las empresas y el mundo?\nAcá pensás en grande, analizás modelos y entendés lo que pocos entienden. Argumentar con datos, no tanto.",
   
-  "4": "Ingeniería y tecnología\nNo venís a aprender lo de siempre.\nVenís a diseñar el futuro: con IA, código y visión.\n1️⃣Ingeniería en Inteligencia Artificial\n2️⃣Ingeniería en Informática.\n¿Te vas a quedar mirando cómo cambia el mundo o querés programarlo?",
+  "4": "Ingeniería y tecnología\nNo venís a aprender lo de siempre.\nVenís a diseñar el futuro: con IA, código y visión. ¿Te vas a quedar mirando cómo cambia el mundo o querés programarlo?",
   
-  "5": "Sociales\n¿Querés entender el poder, cambiar las reglas o defender lo que importa?\nDesde la política global hasta la justicia local, formamos protagonistas.\n1️⃣Ciencias Políticas\n2️⃣Relaciones Internacionales\n3️⃣Abogacía.\nNo venís a ser espectador. Venís a hacer historia.",
+  "5": "Sociales\n¿Querés entender el poder, cambiar las reglas o defender lo que importa?\nDesde la política global hasta la justicia local, formamos protagonistas. Venís a hacer historia.",
   
-  "6": "BA - Artes Liberales y Ciencias\n¿Curioso, creativo y sin miedo a lo complejo?\nEste no es un camino común, pero es el que toman quienes quieren pensar distinto.\n1️⃣BA - Artes Liberales y Ciencias.\nUna carrera para los que se animan a no encajar."
+  "6": "BA - Artes Liberales y Ciencias\n¿Curioso, creativo y sin miedo a lo complejo?\nEste no es un camino común, pero es el que toman quienes quieren pensar distinto. Una carrera para los que se animan a no encajar."
 },
 
   "1.1": {
