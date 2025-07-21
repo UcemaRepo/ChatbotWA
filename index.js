@@ -94,7 +94,7 @@ app.post('/message.php', (req, res) => {
       } else {
         // En submenú pero el número no corresponde
         const opciones = generarOpciones(estado.menu);
-        res.json({ reply: `❌ Opción inválida. Por favor elegí una opción del menú.\n\n${opciones}` });
+        res.json({ reply: opciones });
       }
     }
   }
