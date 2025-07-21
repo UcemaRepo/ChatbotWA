@@ -86,17 +86,17 @@ app.post('/message.php', (req, res) => {
       estado.menu = "root";
       res.json({ reply: menu.default });
     } else {
-      const index = parseInt(claveEntrada) - 1;
-      const claveCarrera = submenus[estado.menu]?.[index];
-      if (claveCarrera && menu[claveCarrera]) {
-        const respuesta = `${menu[claveCarrera].descripcion}\n👉 Contactá con un asesor: https://wa.me/${menu[claveCarrera].asesor}?text=Estoy%20interesado%20en%20la%20${encodeURIComponent(menu[claveCarrera].nombre)}`;
-        res.json({ reply: respuesta });
-      } else {
-        // En submenú pero el número no corresponde
-        const opciones = generarOpciones(estado.menu);
-        res.json({ reply: opciones });
-      }
-    }
+  const index = parseInt(claveEntrada) - 1;
+  const claveCarrera = submenus[estado.menu]?.[index];
+  if (claveCarrera && menu[claveCarrera]) {
+    const respuesta = `${menu[claveCarrera].descripcion}\n👉 Contactá con un asesor: https://wa.me/${menu[claveCarrera].asesor}?text=Estoy%20interesado%20en%20la%20${encodeURIComponent(menu[claveCarrera].nombre)}`;
+    res.json({ reply: respuesta });
+  } else {
+    // Entrada inválida dentro del submenú → volver al menú principal
+    estado.menu = "root";
+    res.json({ reply: menu.default });
+  }
+}
   }
 });
 
