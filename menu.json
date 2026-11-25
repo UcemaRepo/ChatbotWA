@@ -15,84 +15,93 @@
   "6": "*BA - Artes Liberales y Ciencias*\n\n¿Curioso, creativo y sin miedo a lo complejo?\n\nEste no es un camino común, pero es el que toman quienes quieren pensar distinto. Una carrera para los que se animan a no encajar."
 },
 
+  "asesores": {
+    "nico":    { "nombre": "Nico",    "telefono": "" },
+    "cami":    { "nombre": "Cami",    "telefono": "" },
+    "barbara": { "nombre": "Bárbara", "telefono": "" },
+    "julieta": { "nombre": "Julieta", "telefono": "" },
+    "franco":  { "nombre": "Franco",  "telefono": "" },
+    "agus":    { "nombre": "Agus",    "telefono": "" }
+  },
+
   "1.1": {
     "nombre": "Administración de Empresas",
     "descripcion": "¿Querés liderar equipos, abrir tu startup o dirigir una empresa global?\nEsta carrera es el campo de entrenamiento para quienes toman decisiones y no esperan órdenes.\n📝 Plan de estudios: 4 años. Modalidad presencial de lunes a viernes de 9 a 15 h en Ciudad de Buenos Aires.",
-    "asesor": "5491141815223"
+    "asesor": "cami"
   },
   "1.2": {
     "nombre": "Marketing",
     "descripcion": "¿Querés crear marcas que la rompan y campañas que nadie pueda ignorar?\nAcá aprendés a conectar con personas, mover emociones y vender ideas. Spoiler: vas a necesitar algo más que likes.\n📝 Plan de estudios: 4 años. Modalidad presencial de lunes a viernes de 9 a 15 h en Ciudad de Buenos Aires.",
-    "asesor": "5491140888081"
+    "asesor": "nico"
   },
   "1.3": {
     "nombre": "Negocios Digitales",
     "descripcion": "¿Sos de los que piensa que Instagram, e-commerce y data no son ‘el futuro’, sino el ahora?\nEsta carrera combina tecnología, marketing y estrategia para crear negocios que escalan.\n📝 Plan de estudios: 4 años. Modalidad presencial de lunes a viernes de 9 a 15 h en Ciudad de Buenos Aires.",
-    "asesor": "5491140888081"
+    "asesor": "julieta"
   },
   "1.4": {
     "nombre": "Analítica de Negocios",
     "descripcion": "¿Te gusta entender los ‘por qué’ detrás de lo que funciona (y lo que no)?\nAcá transformás datos en decisiones que valen millones. No es magia, es análisis.\n📝 Plan de estudios: 4 años. Modalidad presencial de lunes a viernes de 9 a 15 h en Ciudad de Buenos Aires.",
-    "asesor": "5491140888081"
+    "asesor": "nico"
   },
 
   "2.1": {
     "nombre": "Finanzas",
     "descripcion": "¿Te obsesionan los mercados, las inversiones y los grandes movimientos de plata?\nEsta carrera es para quienes quieren entender el juego... y ganar en él.\n📝 Plan de estudios: 4 años. Modalidad presencial de lunes a viernes de 9 a 15 h en Ciudad de Buenos Aires.",
-    "asesor": "5491136163074"
+    "asesor": "barbara"
   },
   "2.2": {
     "nombre": "Actuario",
     "descripcion": "¿Sos fan del riesgo... pero te gusta tenerlo bajo control?\nConvertite en el cerebro que usan bancos, aseguradoras y empresas para anticiparse al futuro.\n📝 Plan de estudios: 4 años. Modalidad presencial de lunes a viernes de 9 a 15 h en Ciudad de Buenos Aires.",
-    "asesor": "5491136786247"
+    "asesor": "barbara"
   },
   "2.3": {
     "nombre": "Contador Público",
     "descripcion": "¿Te gustan los números, pero más aún lo que revelan?\nEsta carrera te prepara para auditar, planificar y liderar desde el lado más sólido del negocio.\n📝 Plan de estudios: 4 años. Modalidad presencial: 2 años de 9 a 15 h y 2 años de 18:30 a 22:30 h en Ciudad de Buenos Aires.",
-    "asesor": "5491136163074"
+    "asesor": "agus"
   },
 
   "3.1": {
     "nombre": "Economía",
     "descripcion": "¿Querés entender cómo se mueve el mundo (de verdad)?\nEsta carrera es para los que buscan explicaciones, no suposiciones.\n📝 Plan de estudios: 4 años. Modalidad presencial de lunes a viernes de 9 a 15 h en Ciudad de Buenos Aires.",
-    "asesor": "5491159644863"
+    "asesor": "agus"
   },
   "3.2": {
     "nombre": "Economía Empresarial",
     "descripcion": "¿Te interesa la economía, pero con foco en empresas y negocios reales?\nEs como estudiar Economía, pero pensando como CEO.\n📝 Plan de estudios: 4 años. Modalidad presencial de lunes a viernes de 9 a 15 h en Ciudad de Buenos Aires.",
-    "asesor": "5491136163074"
+    "asesor": "franco"
   },
 
   "4.1": {
     "nombre": "Ingeniería en Inteligencia Artificial",
     "descripcion": "🎯 Una carrera pensada para formarte en la tecnología que está transformando el mundo. Aprendé a diseñar, programar y aplicar sistemas inteligentes en industrias como salud, educación, agro, finanzas y más.\n📚 Formación inspirada en Stanford y MIT: Aprendizaje Automático, Deep Learning, NLP, Visión Computacional, Criptografía.\n🧠 Incluye la materia “La Lente Computacional”, que integra ética, filosofía y ciencia.\n📝 Plan de estudios: 5 años. Modalidad presencial de lunes a viernes de 9 a 15 h en Ciudad de Buenos Aires.",
-    "asesor": "5491159644863"
+    "asesor": "franco"
   },
   "4.2": {
     "nombre": "Ingeniería en Informática",
     "descripcion": "🖥 Formación en todas las áreas de Ingeniería y Ciencias de la Computación: hardware, sistemas, redes, IA, web, apps, gestión y más.\n💡 Se complementa con herramientas de dirección de empresas, sistemas de información, finanzas y RRHH.\n📝 Plan de estudios: 5 años. Modalidad presencial de lunes a viernes de 18:30 a 22:30 h en Ciudad de Buenos Aires. Desde 3º año, cursada híbrida.",
-    "asesor": "5491140888081"
+    "asesor": "nico"
   },
 
   "5.1": {
     "nombre": "Ciencias Políticas",
     "descripcion": "¿Querés entender el poder y aprender a usarlo bien?\nSpoiler: no venís a quejarte. Venís a cambiar las reglas.\n📝 Plan de estudios: 4 años. Modalidad presencial de lunes a viernes de 9 a 15 h en Ciudad de Buenos Aires.",
-    "asesor": "5491136786247"
+    "asesor": "julieta"
   },
   "5.2": {
     "nombre": "Relaciones Internacionales",
     "descripcion": "¿Te interesa el juego global, los países, las ideas y los conflictos?\nIdeal para quienes ven un mapa y piensan en estrategia.\n📝 Plan de estudios: 4 años. Modalidad presencial de lunes a viernes de 9 a 15 h en Ciudad de Buenos Aires.",
-    "asesor": "5491136786247"
+    "asesor": "julieta"
   },
   "5.3": {
     "nombre": "Abogacía",
     "descripcion": "¿Sentís que hay cosas que no pueden quedar así nomás?\nEsta carrera es para quienes quieren defender, argumentar y transformar desde el derecho.\n📝 Plan de estudios: 4 años. Modalidad presencial de lunes a viernes de 17 a 22:30 h en Ciudad de Buenos Aires.",
-    "asesor": "5491136786247"
+    "asesor": "cami"
   },
 
   "6.1": {
     "nombre": "BA - Artes Liberales y Ciencias",
     "descripcion": "¿No encajás en un molde y eso te encanta?\nFormación amplia, profunda y desafiante para los que conectan ideas y hacen las preguntas difíciles.\n📝 Plan de estudios: 4 años. Modalidad presencial de lunes a viernes de 9 a 15 h en Ciudad de Buenos Aires.",
-    "asesor": "5491136786247"
+    "asesor": "franco"
   }
 }

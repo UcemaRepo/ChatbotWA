@@ -89,7 +89,12 @@ app.post('/message.php', (req, res) => {
   const index = parseInt(claveEntrada) - 1;
   const claveCarrera = submenus[estado.menu]?.[index];
   if (claveCarrera && menu[claveCarrera]) {
-    const respuesta = `${menu[claveCarrera].descripcion}\n👉 Contactá con un asesor: https://wa.me/${menu[claveCarrera].asesor}?text=Estoy%20interesado%20en%20la%20${encodeURIComponent(menu[claveCarrera].nombre)}`;
+    const carrera = menu[claveCarrera];
+    const asesor = menu.asesores?.[carrera.asesor];
+    const contacto = asesor?.telefono
+      ? `👉 Contactá con ${asesor.nombre}, tu asesor/a: https://wa.me/${asesor.telefono}?text=Estoy%20interesado%20en%20la%20${encodeURIComponent(carrera.nombre)}`
+      : `👉 Un asesor se va a comunicar con vos a la brevedad.`;
+    const respuesta = `${carrera.descripcion}\n${contacto}`;
     res.json({ reply: respuesta });
   } else {
     // Entrada inválida dentro del submenú → volver al menú principal
