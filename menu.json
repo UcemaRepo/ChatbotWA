@@ -16,12 +16,12 @@
 },
 
   "asesores": {
-    "nico":    { "nombre": "Nico",    "telefono": "" },
-    "cami":    { "nombre": "Cami",    "telefono": "" },
-    "barbara": { "nombre": "Bárbara", "telefono": "" },
-    "julieta": { "nombre": "Julieta", "telefono": "" },
-    "franco":  { "nombre": "Franco",  "telefono": "" },
-    "agus":    { "nombre": "Agus",    "telefono": "" }
+    "nico":    { "nombre": "Nico",    "telefono": "5491172490283" },
+    "cami":    { "nombre": "Cami",    "telefono": "5491128989950" },
+    "barbara": { "nombre": "Bárbara", "telefono": "5491122342066" },
+    "julieta": { "nombre": "Julieta", "telefono": "5491123476329" },
+    "franco":  { "nombre": "Franco",  "telefono": "5491138627643" },
+    "agus":    { "nombre": "Agus",    "telefono": "5491123053984" }
   },
 
   "1.1": {
